@@ -9,7 +9,7 @@
 
 - **No Accounts:** You don’t need to sign up. We don’t know who you are.
 - **On-Device Storage:** Your financial data (subscriptions, prices, notes) never leaves your phone. It is stored in a private local database, not on our servers.
-- **Zero Tracking:** We don’t use trackers, we don’t show ads, and we don’t sell your data. We couldn't even if we wanted to—we don't have it.
+- **Minimal Telemetry:** We use anonymous analytics to improve our brand library and fix bugs. Your financial data (amounts, notes) remains 100% private and stays on your device.
 
 ---
 
@@ -33,6 +33,7 @@ To make the App useful, we perform specific, limited network requests. These req
 - **Currency Conversion:** We fetch the latest rates from **Frankfurter API**.
 - **Brand Identity:** We fetch logos and brand colors from **Brandfetch API** based on the domains you search for.
 - **Notifications:** If enabled, we use **Expo/Apple/Google** system tokens to trigger local reminders.
+- **Usage Insights:** We collect anonymous data about which brands are being searched (e.g., "netflix.com") to improve our built-in logo library (Lupi Assets) and monitor app stability using Firebase.
 
 ### C. [TODO] Future Premium Features
 
@@ -47,6 +48,7 @@ We only connect to services that are essential for the App’s functionality.
 | **Frankfurter API** | Real-time currency exchange      | [Public Domain / Open Source]                         |
 | **Brandfetch API**  | Visualizing your subscriptions   | [Privacy Policy](https://brandfetch.com/privacy)      |
 | **Apple / Google**  | App distribution & Notifications | [Apple Privacy](https://www.apple.com/legal/privacy/) |
+| **Firebase (Google)**  | Crash reporting & anonymous brand usage | [Privacy Policy](https://firebase.google.com/support/privacy) |
 
 ## 4. Total Control: Data Deletion
 
