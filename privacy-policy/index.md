@@ -33,7 +33,7 @@ To make the App useful, we perform specific, limited network requests. These req
 - **Currency Conversion:** We fetch the latest rates from **Frankfurter API**.
 - **Brand Identity:** We fetch logos and brand colors from **Brandfetch API** based on the domains you search for.
 - **Notifications:** If enabled, we use **Expo/Apple/Google** system tokens to trigger local reminders.
-- **Usage Insights:** We collect anonymous data about which brands are being searched (e.g., "netflix.com") to improve our built-in logo library (Lupi Assets) and monitor app stability using Firebase.
+- **Usage & Stability Insights:** We collect anonymous data about which brands are being searched (e.g., "netflix.com") to improve our library. We also use Firebase Crashlytics to monitor app performance and fix technical bugs. This data contains technical logs, device models, and stack traces only. It does not include your financial records, subscription names, or any personal identifiers.
 
 ### C. [TODO] Future Premium Features
 
@@ -48,7 +48,7 @@ We only connect to services that are essential for the App’s functionality.
 | **Frankfurter API** | Real-time currency exchange      | [Public Domain / Open Source]                         |
 | **Brandfetch API**  | Visualizing your subscriptions   | [Privacy Policy](https://brandfetch.com/privacy)      |
 | **Apple / Google**  | App distribution & Notifications | [Apple Privacy](https://www.apple.com/legal/privacy/) |
-| **Firebase (Google)**  | Crash reporting & anonymous brand usage | [Privacy Policy](https://firebase.google.com/support/privacy) |
+| **Firebase (Google)**  | Crash reporting (Crashlytics) & anonymous brand usage | [Privacy Policy](https://firebase.google.com/support/privacy) |
 
 ## 4. Total Control: Data Deletion
 
@@ -63,6 +63,7 @@ Although we do not "collect" data in the traditional sense, we comply with globa
 
 - **GDPR (Europe):** The legal basis for processing is the performance of the contract (providing the app's features).
 - **CCPA (California):** We do not "sell" or "share" your personal information.
+- **Opt-out:** You can enable or disable anonymous analytics and crash reporting at any time via the Settings menu within the App. By default, these features are OFF until you decide to help us improve Lupi.
 
 ## 6. Contact & Support
 
